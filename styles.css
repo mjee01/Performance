@@ -1,0 +1,199 @@
+body{   
+    padding:20px;
+    
+   
+font-family: 'MusicNoteVf';
+background-color: antiquewhite;
+}
+
+@font-face{
+        font-family:'MusicNoteVf';
+        src: url('MusicNoteVf.ttf') format('truetype');
+         
+    }
+
+.one{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.head{
+     
+    font-size: 30px;
+    background-color: rgb(134, 205, 235);
+    border-radius:10px;
+    border: 6px dotted white;
+    padding-left:10px;
+    padding-right:10px;
+    text-align:start;
+}
+.two{
+    padding: 20px;
+    position:relative;
+    display:flex;
+    justify-content: center;
+   
+   align-items: center;
+   gap: 20px;
+    
+
+}
+.three{
+    padding:10px;
+    display:flex;
+     justify-content: center;
+   align-items: center;
+   gap:10px;
+   
+
+}
+.b1{
+    height:200px;
+   width:100px;
+   background-color: rgb(210, 94, 214);
+   border-radius:15px;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items:center;
+
+}
+@keyframes Baka{
+    from{font-variation-settings: "CURL" 0, "TURN" 0;}
+    to {font-variation-settings: "CURL" 300, "TURN" 300;}
+}
+
+
+.b1:hover{
+    background-color:rgb(228, 135, 231);
+    
+}
+.three:has(.b1:hover)~ .two .notes{
+    color:rgb(228, 135, 231);
+    cursor:pointer;
+    animation: Baka 2s infinite;
+    
+}
+.b2:hover{
+    background-color:rgb(153, 225, 153);
+    cursor:pointer;
+}
+.three:has(.b2:hover)~ .two .notes{
+    color:rgb(105, 203, 105);
+    cursor:pointer;
+    animation: Baka 2s infinite;
+}
+.b3:hover{
+    background-color:rgb(231, 197, 85);
+    cursor:pointer;
+}
+.three:has(.b3:hover)~ .two .notes{
+    color:rgb(216, 181, 66);
+    cursor:pointer;
+    animation: Baka 2s infinite;
+}
+.b4:hover{
+    background-color:rgb(238, 180, 200);
+    cursor:pointer;
+}
+.three:has(.b4:hover)~ .two .notes{
+    color:rgb(227, 151, 177);
+    cursor:pointer;
+    animation: Baka 2s infinite;
+}
+.b5:hover{
+    background-color:rgb(231, 240, 187);
+    cursor:pointer;
+}
+.three:has(.b5:hover)~ .two .notes{
+    color:rgb(208, 213, 114);
+    cursor:pointer;
+    animation: Baka 2s infinite;
+}
+
+.b2{
+    height:200px;
+   width:100px;
+   background-color: rgb(109, 207, 114);
+   border-radius:15px;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items:center;
+}
+.b3{
+    height:200px;
+   width:100px;
+   background-color: rgb(228, 173, 64);
+   border-radius:15px;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items:center;
+}
+.b4{
+    height:200px;
+   width:100px;
+   background-color: rgb(239, 123, 148);
+   border-radius:15px;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items:center;
+}
+.b5{
+    height:200px;
+   width:100px;
+   background-color: rgb(231, 217, 91);
+   border-radius:15px;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items:center;
+}
+h2{
+    line-height: 0.9;
+    
+
+}
+.sheet{
+    padding-left: 40px;
+    padding-right: 40px;
+    height: fit-content;
+    width:fit-content;
+    background-color:rgb(255, 255, 255);
+    
+    
+}
+p{
+    font-family:Arial;
+    color: rgb(46, 118, 176);
+
+}
+.notes{
+     font-family: 'MusicNoteVf';
+   font-size: 155px;
+   position: absolute;
+   top:-180px;
+   left:-25vh;
+   line-height: 0.7;
+   color:rgb(184, 86, 122);
+   
+}
+pre{
+    max-width:100%;
+    max-height: 100%;
+}
+.staff{
+    
+   font-size: 30px;
+   
+}
+h1{
+    font-family:"Comic Sans MS";
+    font-size:100px;
+    color:antiquewhite;
+}
+
+
